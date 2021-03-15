@@ -5,16 +5,14 @@ $(function(){
         $('.dropdown').removeClass('activeClick');
         $(this).children('.dropdown').addClass('activeClick');
       } else {
-        $(this).children('.dropdown').removeClass('activeClick');
-        $(this).children('.dropdown').removeClass('active');
+        $(this).children('.dropdown').removeClass('activeClick active');
       }
     }
   );
   $('.main_nav_li').hover(
     function(){
       $('.dropdown').removeClass('activeClick');
-      $(this).children('.dropdown').addClass('active');
-      $(this).children('.dropdown').addClass('activeClick');
+      $(this).children('.dropdown').addClass('active activeClick');
     },
     function(){
       $(this).children('.dropdown').removeClass('active');
