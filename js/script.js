@@ -14,6 +14,7 @@ $(function(){
     function(){
       $('.dropdown').removeClass('activeClick');
       $(this).children('.dropdown').addClass('active');
+      $(this).children('.dropdown').addClass('activeClick');
     },
     function(){
       $(this).children('.dropdown').removeClass('active');
