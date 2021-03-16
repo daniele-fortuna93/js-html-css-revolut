@@ -35,13 +35,15 @@ header li a{
   position: relative;
 }
 .dropdown{
-  display: none;
   position: absolute;
   top: 30px;
   padding: 10px;
   border-radius: 8px;
   box-shadow: rgb(0 0 0 / 4%) 0px 0px 4px 0px, rgb(0 0 0 / 8%) 0px 8px 16px 0px;
   background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
 }
 .dropdown li{
   display: block;
@@ -49,5 +51,6 @@ header li a{
 }
 .active,
 .activeClick{
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
